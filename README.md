@@ -4,7 +4,7 @@
 - Add custom attributes to customer address 
 - Save custom address attributes to customer quote
 - Save this attributes to order  
-- Edit this when edit order address on backend
+- Edit this attributes when edit order address on backend
 
 ## Installation
 
