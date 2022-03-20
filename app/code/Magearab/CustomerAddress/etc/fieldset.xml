@@ -1,0 +1,61 @@
+<?xml version="1.0"?><!--
+  ~ Copyright (c) Shaymaa Saied  07/06/2021, 15:57.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:DataObject/etc/fieldset.xsd">
+    <scope id="global">
+        <fieldset id="sales_copy_order_shipping_address">
+            <field name="longitude">
+                <aspect name="to_order" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_order" />
+            </field>
+        </fieldset>
+        <fieldset id="sales_copy_order_billing_address">
+            <field name="longitude">
+                <aspect name="to_order" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_order" />
+            </field>
+        </fieldset>
+        <fieldset id="sales_convert_quote_address">
+            <field name="longitude">
+                <aspect name="to_order_address" />
+                <aspect name="to_customer_address" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_order_address" />
+                <aspect name="to_customer_address" />
+            </field>
+        </fieldset>
+        <fieldset id="sales_convert_order_address">
+            <field name="longitude">
+                <aspect name="to_quote_address" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_quote_address" />
+            </field>
+        </fieldset>
+        <fieldset id="customer_address">
+            <field name="longitude">
+                <aspect name="to_quote_address" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_quote_address" />
+            </field>
+        </fieldset>
+        <fieldset id="order_address">
+            <field name="longitude">
+                <aspect name="to_customer" />
+                <aspect name="to_customer_address" />
+            </field>
+            <field name="latitude">
+                <aspect name="to_customer" />
+                <aspect name="to_customer_address" />
+            </field>
+        </fieldset>
+    </scope>
+</config>
